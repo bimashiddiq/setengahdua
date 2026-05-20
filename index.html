@@ -25,11 +25,32 @@
                 <a href="#members">Members</a>
                 <a href="#media">Media</a>
             </div>
-            <div class="cta-nav">
-                <a href="https://wa.me/6285793243485" class="btn btn-outline small">Contact</a>
+            <div class="nav-right">
+                <div class="cta-nav">
+                    <a href="https://wa.me/6285793243485" class="btn btn-outline small">Contact</a>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="logo">SETENGAHDUA</span>
+            <button class="drawer-close" id="drawer-close" aria-label="Close menu">&#x2715;</button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#about">About</a>
+            <a href="#music">Music</a>
+            <a href="#members">Members</a>
+            <a href="#media">Media</a>
+            <a href="https://wa.me/6285793243485" class="drawer-cta">Contact</a>
+        </nav>
+    </div>
 
     <header class="hero">
         <div class="hero-image" style="background-image: url('images/header.png');"></div>
@@ -228,14 +249,41 @@
 
     <script src="player.js"></script>
     <script>
-        // Simple scroll effect for nav
+        // Scroll effect
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Mobile hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const drawer = document.getElementById('mobile-drawer');
+        const overlay = document.getElementById('mobile-overlay');
+        const drawerClose = document.getElementById('drawer-close');
+
+        function openMenu() {
+            drawer.classList.add('open');
+            overlay.classList.add('open');
+            hamburger.setAttribute('aria-expanded', 'true');
+            hamburger.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            drawer.classList.remove('open');
+            overlay.classList.remove('open');
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', openMenu);
+        drawerClose.addEventListener('click', closeMenu);
+        overlay.addEventListener('click', closeMenu);
+
+        // Close on link click
+        drawer.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
         });
     </script>
 </body>
