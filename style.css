@@ -354,6 +354,7 @@ nav.scrolled {
 /* Sections */
 .section {
     padding: 8rem 0;
+    scroll-margin-top: 80px;
 }
 
 .alt-bg {
@@ -553,6 +554,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero {
+        padding-top: 80px;
+    }
+
     .hero h1 {
         font-size: 4rem;
     }
