@@ -106,9 +106,6 @@ nav.scrolled {
 /* Hamburger */
 .hamburger {
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
     background: none;
     border: none;
     cursor: pointer;
@@ -563,10 +560,9 @@ footer {
     /* Right-align hero on mobile */
     .hero-content {
         text-align: right;
+        width: 100%;
         padding-right: 1.5rem;
         padding-left: 1.5rem;
-        align-self: flex-end;
-        margin-bottom: 6rem;
     }
 
     .tagline {
@@ -596,6 +592,9 @@ footer {
 
     .hamburger {
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
     }
 
     .about-grid {
