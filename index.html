@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SETENGAHDUA | Press Kit</title>
-    <link rel="stylesheet" href="style.css">
+    <title>SETENGAHDUA | Home</title>
+    <link rel="stylesheet" href="style.css?v=nav-mobile-drawer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,10 +18,11 @@
 
     <nav>
         <div class="nav-container">
-            <div class="logo">SETENGAHDUA</div>
+            <div class="logo"><img src="/images/logo/logo.png" alt="SETENGAHDUA logo" width="42" height="42"><span>SETENGAHDUA</span></div>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#music">Music</a>
+                <a href="/single/">Singles</a>
                 <a href="#members">Members</a>
                 <a href="#media">Media</a>
             </div>
@@ -40,12 +41,13 @@
     <div class="mobile-overlay" id="mobile-overlay"></div>
     <div class="mobile-drawer" id="mobile-drawer">
         <div class="drawer-header">
-            <span class="logo">SETENGAHDUA</span>
+            <span class="logo"><img src="/images/logo/logo.png" alt="SETENGAHDUA logo" width="42" height="42"><span>SETENGAHDUA</span></span>
             <button class="drawer-close" id="drawer-close" aria-label="Close menu">&#x2715;</button>
         </div>
         <nav class="drawer-nav">
             <a href="#about">About</a>
             <a href="#music">Music</a>
+            <a href="/single/">Singles</a>
             <a href="#members">Members</a>
             <a href="#media">Media</a>
             <a href="https://wa.me/6285793243485" class="drawer-cta">Contact</a>
@@ -108,7 +110,7 @@
                     <div class="release-card">
                         <div class="release-info">
                             <h3>Matikan Rasa</h3>
-                            <p class="release-meta">Single • Jan 31, 2025</p>
+                            <p class="release-meta">Single</p>
                             <p>Sebuah nomor alternatif yang menguras emosi, menceritakan tentang perihnya pengkhianatan
                                 namun tetap berdiri teguh dengan ketegaran yang luar biasa.</p>
                         </div>
@@ -116,7 +118,7 @@
                     <div class="release-card">
                         <div class="release-info">
                             <h3>Senandung Rindu</h3>
-                            <p class="release-meta">Single • Nov 2025</p>
+                            <p class="release-meta">Single</p>
                             <p>Membawa pendengar ke ruang nostalgia, lagu ini menangkap esensi kerinduan yang mendalam
                                 dengan aransemen indie-pop yang atmospheric.</p>
                         </div>
@@ -124,7 +126,7 @@
                     <div class="release-card">
                         <div class="release-info">
                             <h3>Tak Bisa Tanpamu</h3>
-                            <p class="release-meta">Single • 2026</p>
+                            <p class="release-meta">Single</p>
                             <p>Eksplorasi ketergantungan emosional yang intens, dibungkus dengan riff gitar yang catchy
                                 dan dinamika rock yang solid.</p>
                         </div>
@@ -133,7 +135,7 @@
             </div>
         </section>
 
-        <section id="player" class="section">
+        <section id="player" class="section" hidden>
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Music Player</h2>

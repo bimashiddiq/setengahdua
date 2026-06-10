@@ -95,6 +95,7 @@ nav.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5rem;
 }
 
 .nav-right {
@@ -238,9 +239,28 @@ nav.scrolled {
 }
 
 .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    flex: 0 0 auto;
     font-family: var(--font-heading);
     font-size: 1.8rem;
     color: var(--accent-cream);
+}
+
+.logo img {
+    display: block;
+    width: 42px;
+    height: auto;
+    filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.45));
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    min-width: 0;
 }
 
 .nav-links a {
@@ -588,7 +608,11 @@ footer {
         width: auto;
     }
 
-    /* Nav: hide links & cta, show hamburger */
+    /* Mobile nav: hide links and CTA; use hamburger drawer only. */
+    .nav-container {
+        padding: 0 1rem;
+    }
+
     .nav-links {
         display: none;
     }

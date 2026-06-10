@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tak Bisa Tanpamu - SETENGAHDUA</title>
+  <meta name="description" content="Halaman single Tak Bisa Tanpamu dari SETENGAHDUA, lengkap dengan credits dan lirik.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --s2-black:#0D0D0D;
+      --s2-red:#B00000;
+      --s2-white:#FFFFFF;
+      --s2-gray:#6C757D;
+      --s2-gold:#CFAD6A;
+      --s2-cream:#F3DDBF;
+      --s2-panel:#171414;
+      --s2-card:#1F1B1B;
+      --font-display:"Bebas Neue","Anton",sans-serif;
+      --font-body:"Poppins","Inter",sans-serif;
+      --font-mono:"Courier Prime","Courier New",monospace;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;background:var(--s2-black);max-width:100%;overflow-x:hidden}
+    body{margin:0;background:
+      radial-gradient(circle at 72% 8%, rgba(176,0,0,.24), transparent 24rem),
+      radial-gradient(circle at 18% 35%, rgba(207,173,106,.12), transparent 22rem),
+      linear-gradient(180deg,#050505 0%,#0D0D0D 46%,#120a0a 100%);
+      color:var(--s2-white);font-family:var(--font-body);line-height:1.65;max-width:100%;overflow-x:hidden}
+    body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.23;mix-blend-mode:screen;background-image:radial-gradient(rgba(255,255,255,.16) .7px, transparent .8px);background-size:3px 3px;z-index:1}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1160px,calc(100% - 36px));margin:0 auto;position:relative;z-index:2;padding-top:88px}
+    .top-nav{position:fixed;top:0;width:100%;z-index:1000;padding:1.5rem 0;transition:padding .3s ease,background-color .3s ease;border-bottom:1px solid rgba(255,255,255,.08);background:rgba(13,13,13,.72);backdrop-filter:blur(10px)}
+    .top-nav.scrolled{background-color:rgba(13,13,13,.95);padding:1rem 0}.nav-container{max-width:1200px;margin:0 auto;padding:0 2rem;display:flex;justify-content:space-between;align-items:center}.logo{display:inline-flex;align-items:center;gap:.7rem;font-family:var(--font-display);font-size:1.8rem;color:var(--s2-cream);letter-spacing:.02em}.logo img{display:block;width:42px;height:auto;filter:drop-shadow(0 8px 18px rgba(0,0,0,.45))}.nav-links{display:flex}.nav-links a{color:#fff;text-decoration:none;margin-left:2rem;font-size:.9rem;text-transform:uppercase;font-weight:600;transition:color .25s ease}.nav-links a:hover{color:var(--s2-red)}.nav-right{display:flex;align-items:center;gap:1.5rem}.cta-nav .btn{display:inline-block;padding:.8rem 1.2rem;border:1px solid var(--s2-cream);font-family:var(--font-display);font-size:1rem;letter-spacing:.04em;text-transform:uppercase}.hamburger{display:none;background:none;border:0;cursor:pointer;padding:4px;width:36px;height:36px}.hamburger span{display:block;height:2px;width:100%;background:var(--s2-cream);border-radius:2px;transition:.3s ease}.hamburger.active span:nth-child(1){transform:translateY(7px) rotate(45deg)}.hamburger.active span:nth-child(2){opacity:0;transform:scaleX(0)}.hamburger.active span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}.mobile-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1100;opacity:0;transition:opacity .3s ease;backdrop-filter:blur(4px)}.mobile-overlay.open{display:block;opacity:1}.mobile-drawer{position:fixed;top:0;right:0;width:min(320px,85vw);height:100dvh;background:#111;border-left:1px solid rgba(255,255,255,.08);z-index:1200;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .35s cubic-bezier(.25,.8,.25,1)}.mobile-drawer.open{transform:translateX(0)}.drawer-header{display:flex;justify-content:space-between;align-items:center;padding:1.4rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.08)}.drawer-close{background:none;border:0;color:var(--s2-cream);font-size:1.4rem;cursor:pointer;line-height:1;opacity:.7}.drawer-nav{display:flex;flex-direction:column;padding:1rem 0;flex:1}.drawer-nav a{color:#fff;text-decoration:none;font-size:1rem;font-family:var(--font-display);letter-spacing:2px;text-transform:uppercase;padding:1.1rem 1.5rem;border-bottom:1px solid rgba(255,255,255,.05);transition:.25s ease}.drawer-nav a:hover,.drawer-nav a:focus{color:var(--s2-gold);background:rgba(255,255,255,.03);padding-left:2rem}.drawer-nav .drawer-cta{margin-top:auto;background:var(--s2-red);color:#fff;border:0;text-align:center;margin:2rem 1.5rem 1.5rem;padding:1rem}
+    .hero{min-height:calc(100vh - 88px);display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:center;padding:64px 0 86px;position:relative;overflow:hidden}
+    .hero::after{content:"TAK BISA TANPAMU";position:absolute;left:-4vw;bottom:0;font-family:var(--font-display);font-size:clamp(86px,15vw,220px);line-height:.8;letter-spacing:.02em;color:rgba(255,255,255,.025);z-index:-1;white-space:nowrap}
+    .kicker{display:inline-flex;align-items:center;gap:12px;font-family:var(--font-mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--s2-gold);border:1px solid rgba(207,173,106,.36);padding:9px 13px;background:rgba(31,27,27,.72)}
+    .kicker::before{content:"";width:28px;height:1px;background:var(--s2-red)}
+    h1{font-family:var(--font-display);font-size:clamp(76px,12vw,164px);line-height:.82;letter-spacing:.015em;text-transform:uppercase;margin:30px 0 24px;color:var(--s2-gold);text-shadow:0 8px 38px rgba(176,0,0,.18)}
+    .subtitle{max-width:600px;color:rgba(255,255,255,.76);font-size:20px;margin:0 0 30px}
+    .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 22px;border:1px solid rgba(207,173,106,.6);font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}.btn.primary{background:var(--s2-red);color:#fff;border-color:rgba(207,173,106,.4)}.btn.secondary{color:var(--s2-gold);background:rgba(13,13,13,.42)}
+    .cover-card{position:relative}.cover-card::before{content:"";position:absolute;inset:24px -18px -22px 22px;border:1px solid rgba(176,0,0,.45);z-index:-1}.cover{width:100%;display:block;border-radius:4px;border:1px solid rgba(207,173,106,.28);box-shadow:0 34px 80px rgba(0,0,0,.55);filter:saturate(.92) contrast(1.05)}
+    .meta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}.meta{border:1px solid rgba(255,255,255,.1);background:rgba(31,27,27,.72);padding:16px}.meta small{display:block;font-family:var(--font-mono);font-size:11px;color:var(--s2-gray);letter-spacing:.12em;text-transform:uppercase}.meta strong{display:block;margin-top:4px;color:var(--s2-cream);font-size:15px}
+    .soon{display:grid;grid-template-columns:.85fr 1.15fr;gap:24px;align-items:center;background:linear-gradient(135deg,rgba(176,0,0,.18),rgba(31,27,27,.82));border:1px solid rgba(207,173,106,.26);padding:28px;margin:0 0 86px;position:relative;overflow:hidden}.soon::after{content:"LISTEN NOW";position:absolute;right:-18px;bottom:-18px;font-family:var(--font-display);font-size:96px;line-height:.8;color:rgba(255,255,255,.035);letter-spacing:.04em}.soon h2{font-family:var(--font-display);font-size:clamp(42px,6vw,78px);line-height:.9;margin:8px 0;color:var(--s2-gold);text-transform:uppercase;letter-spacing:.04em}.soon p{margin:0;color:rgba(255,255,255,.72)}.platforms{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;position:relative;z-index:1}.platform{display:flex;align-items:center;gap:10px;min-height:54px;padding:10px 12px;border:1px solid rgba(255,255,255,.1);background:rgba(13,13,13,.62);color:rgba(255,255,255,.78);font-family:var(--font-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;transition:border-color .2s ease,background .2s ease,transform .2s ease}.platform:hover{border-color:rgba(207,173,106,.55);background:rgba(31,27,27,.88);transform:translateY(-2px)}.platform i{display:inline-grid;place-items:center;flex:0 0 32px;width:32px;height:32px;border-radius:50%;background:rgba(207,173,106,.14);border:1px solid rgba(207,173,106,.34)}.platform img{display:block;width:18px;height:18px;object-fit:contain;filter:invert(80%) sepia(28%) saturate(558%) hue-rotate(2deg) brightness(91%) contrast(88%)}.platform.dark i{background:rgba(255,255,255,.9);border-color:rgba(255,255,255,.9)}.platform.dark img{filter:none}
+    section{padding:86px 0;border-top:1px solid rgba(255,255,255,.08)}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:26px;margin-bottom:28px}.label{font-family:var(--font-mono);color:var(--s2-red);letter-spacing:.18em;text-transform:uppercase;font-size:12px}.section-head h2{font-family:var(--font-display);font-size:clamp(44px,7vw,86px);line-height:.9;margin:8px 0 0;color:var(--s2-white);text-transform:uppercase;letter-spacing:.03em}.section-head p{max-width:470px;color:rgba(255,255,255,.62);margin:0}
+    .story{display:grid;grid-template-columns:1fr 1fr;gap:22px}.panel{background:linear-gradient(180deg,rgba(31,27,27,.9),rgba(14,12,12,.94));border:1px solid rgba(255,255,255,.1);padding:28px;position:relative;overflow:hidden}.panel::before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:linear-gradient(180deg,var(--s2-gold),var(--s2-red))}.panel p{color:rgba(255,255,255,.72);margin:0}.panel b{color:var(--s2-gold)}
+    .credits{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.credit{padding:20px;border:1px dashed rgba(207,173,106,.32);background:rgba(13,13,13,.55)}.credit span{display:block;font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--s2-gray)}.credit strong{display:block;margin-top:8px;font-family:var(--font-display);font-size:28px;letter-spacing:.06em;color:var(--s2-cream);text-transform:uppercase}
+    .lyrics{max-width:860px;margin:0 auto;background:rgba(13,13,13,.62);border:1px solid rgba(207,173,106,.22);padding:38px;box-shadow:0 24px 70px rgba(0,0,0,.25);position:relative}.lyrics::before,.lyrics::after{content:"";position:absolute;left:50%;transform:translateX(-50%);width:180px;height:1px;background:linear-gradient(90deg,transparent,var(--s2-red),transparent)}.lyrics::before{top:18px}.lyrics::after{bottom:18px}.lyrics pre{white-space:pre-wrap;margin:0;font-family:var(--font-body);font-size:clamp(18px,2.3vw,26px);line-height:1.72;color:var(--s2-cream)}
+    footer{padding:40px 0 64px;color:rgba(255,255,255,.54);font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;border-top:1px solid rgba(255,255,255,.08)}
+    @media(max-width:880px){.nav-container{padding:0 1rem}.nav-links{display:none}.cta-nav{display:none}.hamburger{display:flex;flex-direction:column;justify-content:center;gap:5px}.hero,.story,.soon{grid-template-columns:1fr}.cover-card{order:-1}.meta-grid,.credits,.platforms{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:16px}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,1160px);padding-top:112px}.hero{padding-top:32px}.cover-card::before{inset:16px 0 -16px 16px}.meta-grid,.credits,.platforms{grid-template-columns:1fr}.lyrics{padding:30px 22px}.soon{padding:22px}}
+  </style>
+</head>
+<body>
+  <nav class="top-nav" aria-label="Navigasi utama">
+    <div class="nav-container">
+      <div class="logo"><img src="/images/logo/logo.png" alt="SETENGAHDUA logo"><span>SETENGAHDUA</span></div>
+      <div class="nav-links"><a href="https://setengahdua.com/#about">About</a><a href="https://setengahdua.com/#music">Music</a><a href="/single/">Singles</a><a href="https://setengahdua.com/#members">Members</a><a href="https://setengahdua.com/#media">Media</a></div>
+      <div class="nav-right"><div class="cta-nav"><a href="https://wa.me/6285793243485" class="btn btn-outline small">Contact</a></div><button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button></div>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <div class="mobile-drawer" id="mobile-drawer"><div class="drawer-header"><span class="logo"><img src="/images/logo/logo.png" alt="SETENGAHDUA logo"><span>SETENGAHDUA</span></span><button class="drawer-close" id="drawer-close" aria-label="Close menu">&#x2715;</button></div><nav class="drawer-nav"><a href="https://setengahdua.com/#about">About</a><a href="https://setengahdua.com/#music">Music</a><a href="/single/">Singles</a><a href="https://setengahdua.com/#members">Members</a><a href="https://setengahdua.com/#media">Media</a><a href="https://wa.me/6285793243485" class="drawer-cta">Contact</a></nav></div>
+  <div class="wrap">
+
+    <header class="hero">
+      <div>
+        <span class="kicker">Single / Alternative Indie</span>
+        <h1>Tak Bisa<br>Tanpamu</h1>
+        <p class="subtitle">Eksplorasi ketergantungan emosional yang intens, dibungkus dengan riff gitar yang catchy dan dinamika rock yang solid.</p>
+        <div class="actions"><a class="btn primary" href="#lirik">Baca Lirik</a><a class="btn secondary" href="#credits">Lihat Credits</a></div>
+        <div class="meta-grid">
+          <div class="meta"><small>Origin</small><strong>Cirebon, Indonesia</strong></div>
+          <div class="meta"><small>Genre</small><strong>Alternative / Indie</strong></div>
+          <div class="meta"><small>Track</small><strong>Single</strong></div>
+        </div>
+      </div>
+      <div class="cover-card"><img class="cover" src="tak-bisa-tanpamu-cover.jpg" alt="Artwork Tak Bisa Tanpamu oleh SETENGAHDUA"></div>
+    </header>
+
+    <section class="soon" id="platforms" aria-label="Dengarkan di platform favoritmu">
+      <div>
+        <div class="label">Listen Now</div>
+        <h2>Dengarkan<br>Di platform favoritmu!</h2>
+        <p>Pilih platform musik yang paling nyaman buat kamu dan dengarkan <b>Tak Bisa Tanpamu</b> langsung dari katalog resmi SETENGAHDUA.</p>
+      </div>
+      <div class="platforms" aria-label="Official platform links">
+        <a class="platform" href="https://open.spotify.com/album/2eurjlsmKrbDs4G70Wq4yI" target="_blank" rel="noopener"><i><img src="platform-icons/spotify.svg" alt=""></i><span>Spotify</span></a>
+        <a class="platform dark" href="http://itunes.apple.com/album/id/6777309069" target="_blank" rel="noopener"><i><img src="platform-icons/applemusic.svg" alt=""></i><span>Apple Music</span></a>
+        <a class="platform dark" href="http://itunes.apple.com/album/id6777309069?ls=1&amp;app=itunes" target="_blank" rel="noopener"><i><img src="platform-icons/itunes.svg" alt=""></i><span>iTunes</span></a>
+      </div>
+    </section>
+
+    <section id="cerita">
+      <div class="section-head">
+        <div><div class="label">Song Frame</div><h2>Hampa, Mohon, Bertahan</h2></div>
+
+      </div>
+      <div class="story">
+        <div class="panel"><p><b>Tak Bisa Tanpamu</b> menempatkan rasa kehilangan sebagai pusat emosi: sepi yang berbisik, bayang yang tersisa, dan permohonan agar seseorang tidak pergi.</p></div>
+      </div>
+    </section>
+
+    <section id="credits">
+      <div class="section-head">
+        <div><div class="label">Personnel</div><h2>Credits</h2></div>
+
+      </div>
+      <div class="credits">
+        <div class="credit"><span>Songwriter</span><strong>Budiman</strong></div>
+        <div class="credit"><span>Vocals</span><strong>Eyhis</strong></div>
+        <div class="credit"><span>Guitar</span><strong>Risna</strong></div>
+        <div class="credit"><span>Bass</span><strong>Budink</strong></div>
+        <div class="credit"><span>Drums</span><strong>Ady Bombom</strong></div>
+      </div>
+    </section>
+
+    <section id="lirik">
+      <div class="section-head">
+        <div><div class="label">Lyrics</div><h2>Lirik</h2></div>
+
+      </div>
+      <div class="lyrics"><pre>Sepi ku berbisik lirih jangan engkau pergi
+Hanyalah namamu
+Hanyalah bayangmu
+Yang tersisa kini
+
+Tak berdaya
+Ku tak dapat lagi menahan kau pergi
+Aaa.. ku hampa tak berdaya
+
+Reff :
+Aku tak bisa hidup tanpamu
+Aku tenggelam kehilanganmu
+Segenap arti kamu
+Dalam hidupku
+Aku mohon jangan pergi kau tinggalkan aku
+
+Tak berdaya 
+Ku tak dapat lagi menahan kau pergi
+Aaa.. ku tak berdaya</pre></div>
+    </section>
+
+
+    <footer>SETENGAHDUA / Tak Bisa Tanpamu / Single page</footer>
+  </div>
+
+  <script>
+    const topNav=document.querySelector('.top-nav');const hamburger=document.getElementById('hamburger');const drawer=document.getElementById('mobile-drawer');const overlay=document.getElementById('mobile-overlay');const closeBtn=document.getElementById('drawer-close');const toggleMenu=(open)=>{hamburger.classList.toggle('active',open);hamburger.setAttribute('aria-expanded',open?'true':'false');drawer.classList.toggle('open',open);overlay.classList.toggle('open',open);document.body.style.overflow=open?'hidden':''};hamburger.addEventListener('click',()=>toggleMenu(!drawer.classList.contains('open')));closeBtn.addEventListener('click',()=>toggleMenu(false));overlay.addEventListener('click',()=>toggleMenu(false));drawer.querySelectorAll('a').forEach((link)=>link.addEventListener('click',()=>toggleMenu(false)));window.addEventListener('scroll',()=>topNav.classList.toggle('scrolled',window.scrollY>50));
+  </script>
+</body>
+</html>
