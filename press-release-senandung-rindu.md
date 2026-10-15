@@ -7,19 +7,27 @@ Rilis: 11 Oktober 2026 | Cirebon, Jawa Barat
 
 ## SETENGAHDUA Rilis Single “Senandung Rindu”
 
-**Band pop alternative Cirebon merilis lagu tentang kenangan dan janji yang dijaga**
+**Band pop alternative Cirebon merilis lagu tentang rindu mendalam, kenangan, dan janji yang tetap dijaga**
 
 **CIREBON, 11 Oktober 2026** — SETENGAHDUA, band pop alternative asal Cirebon yang terbentuk pada 2024, merilis single terbaru berjudul **“Senandung Rindu”** pada 11 Oktober 2026. Lagu berdurasi 3:52 ini sudah tersedia di berbagai platform streaming, termasuk Spotify dan Apple Music.
 
-“Senandung Rindu” bercerita tentang kerinduan yang tidak selalu bisa diungkapkan dengan kata-kata — kenangan yang tetap hidup, dan janji yang masih dijaga meski waktu dan jarak terus berubah. Dibangun di atas karakter pop alternative khas SETENGAHDUA, lagu ini mengolah perasaan yang sederhana menjadi suasana nostalgia yang hangat.
+“Senandung Rindu” berangkat dari rasa rindu yang mendalam kepada seseorang yang pernah menjadi bagian penting dalam hidup—bisa jadi pasangan hidup. Sejak pertama bertemu hingga kini, perasaan itu tetap tinggal, meski orang yang dirindukan sudah tidak lagi hadir. Lagu ini menangkap gumaman hati seseorang yang jauh dan tak dapat ditemui, namun terus terputar di kepala dan di hati.
 
-Proses mixing dikerjakan di **Jo Studio, Beber, Cirebon**, sebagai bagian dari pembentukan karakter suara band ini. [NAMA PERSONEL], [peran] SETENGAHDUA, mengungkapkan: “[Kutipan asli — satu kalimat tentang lagu ini, misalnya alasan menulis lagu atau bagian yang paling berarti].”
+“Gumaman hati orang yang sedang merindukan seseorang yang jauh, yang nggak bisa ditemui, tapi terus diputar di kepala dan di hati,” ungkap **Eyhis**, vokalis SETENGAHDUA.
+
+“Senandung Rindu adalah tentang menerima waktu tanpa harus mengkhianati kenangan,” ujar **Budhink**.
+
+“Rindu tak selalu tentang ingin kembali, terkadang hanya tentang janji yang masih dijaga,” tutur **Risna**.
+
+Sementara itu, **Ady (Bombom)** menggambarkan lagu ini sebagai “rasa rindu yang mendalam kepada seseorang, bisa jadi pasangan hidup. Dari sejak pertama bertemu sampai saat ini, rasanya masih tetap sama walaupun orangnya sudah nggak ada.”
+
+Proses mixing dikerjakan di **Jo Studio, Beber, Cirebon**. Melalui “Senandung Rindu”, SETENGAHDUA berharap dapat menemani pendengar yang merindukan seseorang, mengenang masa lalu, atau masih menjaga janji yang berarti.
 
 “Senandung Rindu” adalah rilisan kedua SETENGAHDUA setelah “Tak Bisa Tanpamu”, dan menandai arah musikal baru band ini ke pendengar yang lebih luas.
 
 **Tentang SETENGAHDUA**
 
-SETENGAHDUA adalah band pop alternative asal Cirebon yang terbentuk pada 2024. Personelnya: Eyhis (vokal), Risna (gitar), Ady (drum), dan Budink Rahardian (bass). Karya mereka berbicara tentang kehilangan, cinta, kerinduan, dan perjalanan hidup dengan lirik yang dekat dengan pengalaman sehari-hari.
+SETENGAHDUA adalah band pop alternative asal Cirebon yang terbentuk pada 2024. Personelnya: Eyhis (vokal), Risna (gitar), Ady atau Bombom (drum), dan Budhink (bass). Karya mereka berbicara tentang kehilangan, cinta, kerinduan, dan perjalanan hidup dengan lirik yang dekat dengan pengalaman sehari-hari.
 
 **Dengarkan “Senandung Rindu”**
 
@@ -46,8 +54,9 @@ SETENGAHDUA adalah band pop alternative asal Cirebon yang terbentuk pada 2024. P
 
 ### Catatan internal (HAPUS sebelum dikirim)
 
-- Isi `[KUTIPAN asli]` — wajib kutipan nyata dari personel dengan nama asli. Jurnalis menolak kutipan buatan.
+- Kutipan Eyhis, Budhink, Risna, dan Ady (Bombom) sudah dimasukkan dari masukan klien; minta persetujuan akhir para personel atas redaksi kutipannya.
 - Konfirmasi apakah mixing/produksi hanya di Jo Studio atau ada produser/mixer yang perlu dicredit.
 - Apple Music album ID 6817876479 — verifikasi URL persis sebelum kirim.
-- Versi press release lama menyebut gitaris “Boris” — sudah dikoreksi jadi **Risna**; pastikan nama lama tidak muncul di kanal mana pun.
+- Nama bassis ditulis **Budhink** sesuai kutipan klien; konfirmasi apakah kredit resmi yang dipakai adalah Budhink atau Budink Rahardian.
+- Pastikan kredit drum memakai nama **Ady (Bombom)** sesuai permintaan klien.
 - Lampirkan 1–2 foto band resolusi tinggi (opsional tapi meningkatkan peluang tayang).
