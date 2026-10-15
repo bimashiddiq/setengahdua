@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="“Senandung Rindu” — single terbaru SETENGAHDUA, band pop alternative asal Cirebon. Tentang rindu, kenangan, dan janji yang masih dijaga.">
+    <title>Senandung Rindu — SETENGAHDUA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --panel: #161616;
+            --red: #8b0000;
+            --red-bright: #b31b1b;
+            --gold: #cfad6a;
+            --cream: #f3ddbf;
+            --gray: #8a8a8a;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: var(--bg);
+            color: var(--cream);
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.7;
+        }
+        img { display: block; max-width: 100%; }
+        a { color: var(--gold); text-decoration: none; }
+        a:hover { color: var(--cream); }
+
+        /* ===== HERO ===== */
+        .hero {
+            position: relative;
+            min-height: 72vh;
+            display: flex;
+            align-items: flex-end;
+            background:
+                linear-gradient(90deg, rgba(13,13,13,.96) 0%, rgba(13,13,13,.78) 34%, rgba(13,13,13,.15) 62%, rgba(13,13,13,.55) 100%),
+                linear-gradient(0deg, var(--bg) 0%, transparent 30%),
+                url('img/hero-senandung-rindu.webp') center right / cover no-repeat;
+        }
+        .hero-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 7rem 1.5rem 4rem;
+            width: 100%;
+        }
+        .eyebrow {
+            font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+            letter-spacing: .45em;
+            font-size: .95rem;
+            color: var(--red-bright);
+            text-transform: uppercase;
+        }
+        h1 {
+            font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+            font-size: clamp(2.6rem, 8.5vw, 7rem);
+            line-height: .95;
+            letter-spacing: .02em;
+            color: #fff;
+            text-transform: uppercase;
+            margin: .5rem 0 .3rem;
+            overflow-wrap: anywhere;
+        }
+        h1 span { color: var(--gold); }
+        .tagline {
+            font-size: clamp(1rem, 2.2vw, 1.25rem);
+            color: var(--gold);
+            font-style: italic;
+            max-width: 34ch;
+        }
+        .hero-cta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .8rem;
+            margin-top: 1.8rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: .85rem 1.7rem;
+            font-weight: 700;
+            font-size: .92rem;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            border: 1px solid var(--gold);
+            color: var(--gold);
+            transition: .2s;
+        }
+        .btn:hover { background: var(--gold); color: #000; }
+        .btn-solid { background: var(--red); border-color: var(--red); color: #fff; }
+        .btn-solid:hover { background: var(--red-bright); border-color: var(--red-bright); color: #fff; }
+
+        /* ===== SECTIONS ===== */
+        .wrap { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: 4.5rem 0 0; }
+        h2 {
+            font-family: 'Bebas Neue', 'Arial Narrow', sans-serif;
+            font-size: 2.1rem;
+            letter-spacing: .12em;
+            color: var(--gold);
+            text-transform: uppercase;
+            border-bottom: 3px solid var(--red);
+            display: inline-block;
+            padding-bottom: .35rem;
+            margin-bottom: 1.6rem;
+        }
+        p + p { margin-top: 1.1rem; }
+        .lede { font-size: 1.12rem; color: #fff; }
+
+        .pullquote {
+            margin: 2.2rem 0;
+            padding: 1.4rem 1.6rem;
+            background: var(--panel);
+            border-left: 4px solid var(--red);
+            font-size: 1.15rem;
+            font-style: italic;
+            color: #fff;
+        }
+        .pullquote cite {
+            display: block;
+            margin-top: .7rem;
+            font-size: .85rem;
+            font-style: normal;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        /* ===== QUOTES ===== */
+        .quotes { display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+        .quote-card {
+            background: var(--panel);
+            border-top: 3px solid var(--gold);
+            padding: 1.5rem 1.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .quote-card p { font-style: italic; color: var(--cream); font-size: .98rem; }
+        .quote-card strong {
+            font-size: .8rem;
+            letter-spacing: .22em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-style: normal;
+        }
+
+        /* ===== LISTEN / PLATFORMS ===== */
+        .listen {
+            margin-top: 4.5rem;
+            background: var(--panel);
+            border-top: 4px solid var(--red);
+            padding: 3.5rem 0;
+        }
+        .listen h2 { border-bottom-color: var(--gold); }
+        .platforms {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .8rem;
+            margin-top: 1.4rem;
+        }
+        .platforms a {
+            border: 1px solid #3a3a3a;
+            padding: .7rem 1.2rem;
+            font-size: .85rem;
+            letter-spacing: .1em;
+            text-transform: uppercase;
+            color: var(--cream);
+            background: #101010;
+            transition: .2s;
+        }
+        .platforms a:hover { border-color: var(--gold); color: var(--gold); }
+        .avail {
+            font-size: .8rem;
+            letter-spacing: .3em;
+            text-transform: uppercase;
+            color: var(--gray);
+            margin-top: 2.2rem;
+        }
+
+        /* ===== BAND ===== */
+        .members {
+            display: grid;
+            gap: .8rem;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            margin-top: 1.6rem;
+        }
+        .member {
+            background: var(--panel);
+            border: 1px solid #262626;
+            padding: 1.1rem 1rem;
+            text-align: center;
+        }
+        .member b {
+            display: block;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.35rem;
+            letter-spacing: .1em;
+            color: #fff;
+        }
+        .member span { font-size: .78rem; letter-spacing: .25em; text-transform: uppercase; color: var(--gold); }
+
+        /* ===== FOOTER ===== */
+        footer {
+            margin-top: 4.5rem;
+            border-top: 1px solid #262626;
+            padding: 2.5rem 0 3rem;
+            text-align: center;
+            font-size: .85rem;
+            color: var(--gray);
+        }
+        footer .socials { display: flex; gap: 1.4rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1.1rem; }
+        footer .socials a { letter-spacing: .12em; text-transform: uppercase; font-size: .8rem; }
+        footer strong { color: var(--gold); }
+
+        @media (max-width: 640px) {
+            .hero { min-height: 60vh; background-position: 62% center; }
+            .hero-inner { padding-top: 5.5rem; }
+            .eyebrow { letter-spacing: .28em; font-size: .82rem; }
+            h1 { font-size: clamp(2.6rem, 12.5vw, 4.2rem); }
+            h1 span { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero-inner">
+        <div class="eyebrow">Single Terbaru · 11 Oktober 2026</div>
+        <h1>Senandung <span>Rindu</span></h1>
+        <p class="tagline">Menerima waktu tanpa harus mengkhianati kenangan.</p>
+        <div class="hero-cta">
+            <a class="btn btn-solid" href="https://open.spotify.com/track/4yesTzzTuWSLwJRDH2Kdem" target="_blank" rel="noopener">Dengarkan Sekarang</a>
+            <a class="btn" href="#kutipan">Baca Ceritanya</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section id="kutipan" class="wrap">
+        <h2>Tentang Lagu</h2>
+        <p class="lede">“Senandung Rindu” adalah lagu tentang rasa rindu yang mendalam kepada seseorang — bisa jadi pasangan hidup. Dari sejak pertama bertemu sampai saat ini, rasanya masih tetap sama, walaupun orangnya sudah tidak ada.</p>
+        <p>Ini gumaman hati orang yang sedang merindukan seseorang yang jauh, yang tidak bisa ditemui, tapi terus diputar di kepala dan di hati. Sebagian rindu memang tidak selalu harus diucapkan — cukup dinyanyikan, agar kenangan tetap punya tempat untuk tinggal.</p>
+
+        <div class="pullquote">
+            “Rindu tak selalu tentang ingin kembali, terkadang hanya tentang janji yang masih dijaga.”
+            <cite>— Risna</cite>
+        </div>
+
+        <p>Di balik lagu ini ada tiga suara yang memaknainya dengan caranya masing-masing.</p>
+
+        <div class="quotes" style="margin-top:1.6rem;">
+            <div class="quote-card">
+                <p>“Gumaman hati orang yang sedang merindukan seseorang yang jauh, yang nggak bisa ditemui, tapi terus diputar di kepala dan di hati.”</p>
+                <strong>Eyhis — Vokal</strong>
+            </div>
+            <div class="quote-card">
+                <p>“Senandung Rindu adalah tentang menerima waktu tanpa harus mengkhianati kenangan.”</p>
+                <strong>Budhink — Bass</strong>
+            </div>
+            <div class="quote-card">
+                <p>“Rindu tak selalu tentang ingin kembali, terkadang hanya tentang janji yang masih dijaga.”</p>
+                <strong>Risna — Gitar</strong>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrap">
+        <h2>Sebuah Janji yang Dijaga</h2>
+        <p>Tidak semua yang telah berlalu benar-benar hilang. Beberapa hal tetap hidup dalam ingatan, menemani langkah, dan sesekali hadir kembali melalui sebuah lagu — persis seperti “Senandung Rindu”.</p>
+        <p>Dengan karakter pop alternative khas SETENGAHDUA, lagu ini menghadirkan suasana nostalgia yang hangat sekaligus menyentuh: ada rindu yang tidak selalu harus diucapkan, ada kenangan yang tak mudah dilupakan, serta janji yang tetap dijaga di tengah perubahan keadaan.</p>
+    </section>
+
+    <section class="wrap">
+        <h2>Tentang SETENGAHDUA</h2>
+        <p>SETENGAHDUA adalah band pop alternative asal Cirebon yang terbentuk pada 2024. Dengan pendekatan musikal yang emosional dan lirik yang dekat dengan pengalaman manusia, mereka terus menghadirkan karya yang berbicara tentang kehilangan, cinta, kerinduan, dan perjalanan hidup.</p>
+        <div class="members">
+            <div class="member"><b>Eyhis</b><span>Vokal</span></div>
+            <div class="member"><b>Risna</b><span>Gitar</span></div>
+            <div class="member"><b>Budhink</b><span>Bass</span></div>
+            <div class="member"><b>Ady</b><span>Drum</span></div>
+        </div>
+    </section>
+
+    <section class="listen">
+        <div class="wrap">
+            <h2>Dengarkan</h2>
+            <div class="platforms">
+                <a href="https://open.spotify.com/track/4yesTzzTuWSLwJRDH2Kdem" target="_blank" rel="noopener">Spotify</a>
+                <a href="https://music.apple.com/id/album/6817876479" target="_blank" rel="noopener">Apple Music</a>
+                <a href="https://www.youtube.com/results?search_query=SETENGAHDUA+Senandung+Rindu" target="_blank" rel="noopener">YouTube Music</a>
+                <a href="https://www.deezer.com/search/SETENGAHDUA%20Senandung%20Rindu" target="_blank" rel="noopener">Deezer</a>
+                <a href="https://music.amazon.co.id/search/SETENGAHDUA%20Senandung%20Rindu" target="_blank" rel="noopener">Amazon Music</a>
+            </div>
+            <p class="avail">Available on Digital Platforms</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="socials">
+        <a href="https://instagram.com/setengahduaofficial" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@setengahduaofficial" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.youtube.com/results?search_query=SETENGAHDUAOFFICIAL" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://setengahdua.com" target="_blank" rel="noopener">Situs</a>
+    </div>
+    <p><strong>SETENGAHDUA</strong> — karena beberapa rindu tidak pernah benar-benar selesai.</p>
+    <p style="margin-top:.6rem;">Booking &amp; press: <a href="https://wa.me/6285793243485">WhatsApp</a> · <a href="mailto:duasetengah4@gmail.com">duasetengah4@gmail.com</a></p>
+</footer>
+
+</body>
+</html>
